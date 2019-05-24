@@ -1,16 +1,7 @@
-# Free time activity recomender | Expert system 
-Expert system for BI-ZNS course.
+# BI-ZNS
+Tasks for Expert system course.
+In first three tasks I came up with and recommender, which based on rules and Bayes inference.
+My expert system recomends a free time actvity based on user input.
 
-## Tasks 
-0. [x] Choose a topic
-1. [x] Come up with at least 15 knowledge base entries
-2. [x] Create inference machine
-3. [x] Implement Bayes theorem
-4. [x] Create fuzzy inference machine
-
-## Visualisation of expert system
-![Visualisation](https://github.com/Eldeeqq/BI-ZNS/blob/master/Task%201/chart.png)
-
-description: This expert system will (based on user input) decide which activity should user do. It contains wide range of possibilities f.e. petting cat, walking the dog, cooking and more.
-
-
+Fourth task is an expert system which tells user how much on scale from 0 to 10 he or she should 
+take a coffee.
