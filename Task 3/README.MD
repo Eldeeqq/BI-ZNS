@@ -6,7 +6,6 @@ Expert system for BI-ZNS course.
 1. [x] Come up with at least 15 knowledge base entries
 2. [x] Create inference machine
 3. [x] Implement Bayes theorem
-4. [x] Create fuzzy inference machine
 
 ## Visualisation of expert system
 ![Visualisation](https://github.com/Eldeeqq/BI-ZNS/blob/master/Task%201/chart.png)
