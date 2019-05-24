@@ -14,3 +14,5 @@ Expert system for BI-ZNS course.
 description: This expert system will (based on user input) decide which activity should user do. It contains wide range of possibilities f.e. petting cat, walking the dog, cooking and more.
 
 
+# run with
+  > python3.6 ExpertSystem.py
