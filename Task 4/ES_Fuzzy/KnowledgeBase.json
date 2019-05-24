@@ -1,0 +1,249 @@
+{
+  "FactBase": [
+    {
+      "tired": [
+        {
+          "question": "How much tired you are?"
+        },
+        {
+          "values": [
+            {
+              "low": [
+                0,
+                0,
+                2,
+                4
+              ]
+            },
+            {
+              "medium": [
+                2,
+                4,
+                6,
+                8
+              ]
+            },
+            {
+              "high": [
+                6,
+                8,
+                10,
+                10
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "productive": [
+        {
+          "question": "Do you need to be productive?"
+        },
+        {
+          "values": [
+            {
+              "no": [
+                0,
+                3,
+                4,
+                7
+              ]
+            },
+            {
+              "yes": [
+                5,
+                7,
+                8,
+                10
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "coffee": [
+        {
+          "question": "How much do you like coffee?"
+        },
+        {
+          "values": [
+            {
+              "low": [
+                0,
+                2,
+                3,
+                5
+              ]
+            },
+            {
+              "medium": [
+                2,
+                4,
+                6,
+                8
+              ]
+            },
+            {
+              "high": [
+                5,
+                7,
+                8,
+                10
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "Rules": [
+    {
+      "no": {
+        "tired": "low",
+        "coffee": "low",
+        "productive": "no"
+      }
+    },
+    {
+      "no": {
+        "tired": "low",
+        "coffee": "low",
+        "productive": "yes"
+      }
+    },
+    {
+      "no": {
+        "tired": "low",
+        "coffee": "medium",
+        "productive": "no"
+      }
+    },
+    {
+      "no": {
+        "tired": "low",
+        "coffee": "medium",
+        "productive": "yes"
+      }
+    },
+    {
+      "no": {
+        "tired": "low",
+        "coffee": "high",
+        "productive": "no"
+      }
+    },
+    {
+      "maybe": {
+        "tired": "low",
+        "coffee": "high",
+        "productive": "yes"
+      }
+    },
+    {
+      "maybe": {
+        "tired": "medium",
+        "coffee": "low",
+        "productive": "no"
+      }
+    },
+    {
+      "maybe": {
+        "tired": "medium",
+        "coffee": "low",
+        "productive": "yes"
+      }
+    },
+    {
+      "maybe": {
+        "tired": "medium",
+        "coffee": "medium",
+        "productive": "no"
+      }
+    },
+    {
+      "maybe": {
+        "tired": "medium",
+        "coffee": "medium",
+        "productive": "yes"
+      }
+    },
+    {
+      "maybe": {
+        "tired": "medium",
+        "coffee": "high",
+        "productive": "no"
+      }
+    },
+    {
+      "maybe": {
+        "tired": "medium",
+        "coffee": "high",
+        "productive": "yes"
+      }
+    },
+    {
+      "maybe": {
+        "tired": "high",
+        "coffee": "low",
+        "productive": "no"
+      }
+    },
+    {
+      "yes": {
+        "tired": "high",
+        "coffee": "low",
+        "productive": "yes"
+      }
+    },
+    {
+      "yes": {
+        "tired": "high",
+        "coffee": "medium",
+        "productive": "no"
+      }
+    },
+    {
+      "yes": {
+        "tired": "high",
+        "coffee": "medium",
+        "productive": "yes"
+      }
+    },
+    {
+      "yes": {
+        "tired": "high",
+        "coffee": "high",
+        "productive": "no"
+      }
+    },
+    {
+      "yes": {
+        "tired": "high",
+        "coffee": "high",
+        "productive": "yes"
+      }
+    }
+  ],
+  "Results": {
+    "no": [
+      0,
+      2,
+      4,
+      6
+    ],
+    "maybe": [
+      3,
+      5,
+      7,
+      9
+    ],
+    "yes": [
+      6,
+      8,
+      10,
+      10
+    ]
+  }
+}

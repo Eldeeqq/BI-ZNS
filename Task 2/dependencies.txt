@@ -1,0 +1,4 @@
+dependencies:
+	python3.6
+	pip
+	python random library

@@ -1,0 +1,95 @@
+{"questions":[
+{"text":"Is it winter?","choices":{"yes":true,"no":false},"implicate":"winter","explain":"It's a useful  fact."}
+,{"text":"Is there snow outside?","choices":{"yes":true,"no":false},"implicate":"snow","explain":"It's a useful  fact."}
+,{"text":"Is it raining?","choices":{"yes":true,"no":false},"implicate":"rain","explain":"It's a useful  fact."}
+,{"text":"Do you have a dog?","choices":{"yes":true,"no":false},"implicate":"dog","explain":"It's a useful  fact."}
+,{"text":"Do you have a cat?","choices":{"yes":true,"no":false},"implicate":"cat","explain":"It's a useful  fact."}
+,{"text":"Do you like coffee?","choices":{"yes":true,"no":false},"implicate":"coffee","explain":"It's a useful  fact."}
+,{"text":"Do you have a cake?","choices":{"yes":true,"no":false},"implicate":"got_cake","explain":"It's a useful  fact."}
+,{"text":"Are you hungry?","choices":{"yes":true,"no":false},"implicate":"hungry","explain":"It's a useful  fact."}
+,{"text":"Can you cook?","choices":{"yes":true,"no":false},"implicate":"can_cook","explain":"It's a useful  fact."}
+,{"text":"Do you have a food in fridge?","choices":{"yes":true,"no":false},"implicate":"got_food_in_fridge","explain":"It's a useful  fact."}
+,{"text":"Do you have a favorite restaurant?","choices":{"yes":true,"no":false},"implicate":"restaurant","explain":"It's a useful  fact."}
+,{"text":"Do you like sports?","choices":{"yes":true,"no":false},"implicate":"sport","explain":"It's a useful  fact."}
+,{"text":"Do you have friends to spend time with?","choices":{"yes":true,"no":false},"implicate":"group","explain":"It's a useful  fact."}
+,{"text":"Do you like ball games?","choices":{"yes":true,"no":false},"implicate":"ball","explain":"It's a useful  fact."}
+,{"text":"Do you need to get in shape?","choices":{"yes":true,"no":false},"implicate":"shape","explain":"It's a useful  fact."}
+,{"text":"Are you a student?","choices":{"yes":true,"no":false},"implicate":"student","explain":"It's a useful  fact."}
+,{"text":"Do you have exam soon?","choices":{"yes":true,"no":false},"implicate":"exam_soon","explain":"It's a useful  fact."}
+,{"text":"Are you a student @fitctu?","choices":{"yes":true,"no":false},"implicate":"fit_ctu","explain":"It's a useful  fact."}
+,{"text":"Do you consider yourself creative?","choices":{"yes":true,"no":false},"implicate":"creative","explain":"It's a useful  fact."}
+,{"text":"Do you like music?","choices":{"yes":true,"no":false},"implicate":"music","explain":"It's a useful  fact."}
+
+],
+
+
+"rules":[
+  {"hypothesis":{"winter":true,"snow":true},"implies":"build_snowman","uncertainty":""}
+,{"hypothesis":{"winter":true,"snow":true,"dog":true},"implies":"walk_dog","uncertainty":""}
+,{"hypothesis":{"winter":false,"raining":false,"dog":true},"implies":"walk_dog","uncertainty":""}
+,{"hypothesis":{"dog":false,"cat":true},"implies":"pet_cat","uncertainty":""}
+,{"hypothesis":{"dog":false," cat":false},"implies":"visit_zoo","uncertainty":""}
+,{"hypothesis":{"coffee":true,"got_cake":true},"implies":"coffee_and_cake","uncertainty":""}
+,{"hypothesis":{"coffee":true,"got_cake":false},"implies":"coffee_time","uncertainty":""}
+,{"hypothesis":{"coffee":false,"hungry":true,"got_food_in_fridge":true,"can_cook":true},"implies":"cook","uncertainty":""}
+,{"hypothesis":{"can_cook":false},"implies":"learn_to_cook","uncertainty":""}
+,{"hypothesis":{"can_cook":true, "got_food_in_fridge":true},"implies":"cook","uncertainty":""}
+,{"hypothesis":{"cook":true,"shape":false},"implies":"cook_normal","uncertainty":""}
+,{"hypothesis":{"cook":true,"shape":true},"implies":"cook_healthy","uncertainty":""}
+,{"hypothesis":{"coffee":false,"hungry":true,"got_food_in_fridge":false,"can_cook":true},"implies":"go_shop","uncertainty":""}
+,{"hypothesis":{"coffee":false,"hungry":true,"got_food_in_fridge":false,"can_cook":false},"implies":"restaurant","uncertainty":""}
+,{"hypothesis":{"restaurant":true,"lazy":true},"implies":"order_food","uncertainty":""}
+,{"hypothesis":{"restaurant":true,"lazy":false},"implies":"eat_out","uncertainty":""}
+,{"hypothesis":{"hungry":false,"sport":true,"group":true,"ball":true},"implies":"basketball","uncertainty":""}
+,{"hypothesis":{"hungry":false,"sport":true,"group":false,"shape":true},"implies":"gym","uncertainty":""}
+,{"hypothesis":{"hungry":false,"sport":true,"group":true,"ball":true,"shape":true},"implies":"gym","uncertainty":""}
+,{"hypothesis":{"hungry":false,"sport":true,"group":true,"ball":true,"shape":false},"implies":"e-sports","uncertainty":""}
+,{"hypothesis":{"hungry":false,"sport":true,"group":false,"shape":false},"implies":"e-sports","uncertainty":""}
+,{"hypothesis":{"like_movies":true,"live_in_city":true,"have_money":false},"implies":"movie_on_pc","uncertainty":""}
+,{"hypothesis":{"like_movies":true,"live_in_city":false,"have_money":false},"implies":"movie_on_pc","uncertainty":""}
+,{"hypothesis":{"like_movies":true,"live_in_city":true,"have_money":true},"implies":"cinema","uncertainty":""}
+,{"hypothesis":{"student":true,"fit_ctu":true},"implies":"progtest","uncertainty":""}
+,{"hypothesis":{"student":true,"exam_soon":true},"implies":"study","uncertainty":""}
+,{"hypothesis":{"creative":true,"crafty":true},"implies":"craft_cupboard","uncertainty":""}
+,{"hypothesis":{"creative":true,"can_draw":true},"implies":"draw","uncertainty":""}
+,{"hypothesis":{"creative":true,"writer":true},"implies":"write","uncertainty":""}
+,{"hypothesis":{"creative":true,"music":true},"implies":"jam","uncertainty":""}
+,{"hypothesis":{"creative":false,"music":true},"implies":"listen_music","uncertainty":""}
+,{"hypothesis":{"creative":false,"music":false},"implies":"sleep","uncertainty":""}
+,{"hypothesis":{"student":false,"can_take_vacation":true},"implies":"trip","uncertainty":""}
+,{"hypothesis":{"student":false,"can_take_vacation":false},"implies":"drink","uncertainty":""}
+],
+"results":[
+  {"fact":"walk_dog", "text":"walk the dog"},
+  {"fact":"build_snowman", "text":"build a snowman"},
+  {"fact":"pet_cat", "text":"pet your cat"},
+  {"fact":"visit_zoo", "text":"go to the zoo"},
+  {"fact":"coffee_and_cake", "text":"get a dessert with coffee"},
+  {"fact":"coffee_time", "text":"take a coffee"},
+  {"fact":"learn_to_cook", "text":"learn how to cook"},
+  {"fact":"cook_healthy", "text":"cook something healthy"},
+  {"fact":"cook_normal", "text":"cook something awesome"},
+  {"fact":"go_shop", "text":"replenish your resources"},
+  {"fact":"eat_out", "text":"should go to your favorite restaurant"},
+  {"fact":"order_food", "text":"order food"},
+  {"fact":"basketball", "text":"play basketball"},
+  {"fact":"gym", "text":"visit the gym"},
+  {"fact":"e-sports", "text":"play or watch come competitive game"},
+  {"fact":"movie_on_pc", "text":"watch a movie on your pc"},
+  {"fact":"cinema", "text":"go to cinema"},
+  {"fact":"progtest", "text":"take care of progtest"},
+  {"fact":"study", "text":"study a bit"},
+  {"fact":"craft_cupboard", "text":"craft something f.e. cupboard"},
+  {"fact":"draw", "text":"go draw something"},
+  {"fact":"write", "text":"write something up"},
+  {"fact":"jam", "text":"jam with some musicians"},
+  {"fact":"listen_music", "text":"listen some music"},
+  {"fact":"trip", "text":"go on a trip"},
+  {"fact":"sleep", "text":"should go sleep"},
+  {"fact":"drink", "text":"go get a drink"}
+
+
+
+]
+
+}

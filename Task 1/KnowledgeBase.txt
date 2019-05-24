@@ -1,0 +1,39 @@
+/****		List of rules for the expert system  		****\
+IF its_raining THEN inside_activity
+IF summer AND sunny THEN go_to_lake
+IF winter THEN build_snowman
+IF friday AND study_fit THEN progtest_time
+IF hungry AND !have_money THEN visit_grandma
+IF hungry AND have_money THEN grab_dinner
+IF study AND have_exam THEN read_or_study
+IF !have_bfgf AND want_gfbf THEN start_looking
+IF have_backpain THEN get_massage
+IF have_cat THEN pet_it
+IF can_sleep THEN should_sleep
+IF like_people THEN club_or_party                       
+IF can_invite_friend THEN multiperson_activity
+IF stressed THEN need_relax
+IF need_relax THEN take_bath
+IF stressed THEN meditate
+IF live_in_city THEN go_sightseeing
+IF live_in_city AND have_money THEN cinema_or_theatre
+IF like_sport THEN do_sport
+IF need_relax AND likes_tea THEN visit_tearoom
+IF want_create_stuff THEN do_ceramics
+IF have_dog AND want_go_out THEN walk_dog
+IF lazy THEN movie_night
+IF ball_games THEN street_basketball
+IF creative THEN create_stuff
+IF hungry AND can_cook THEN cook
+IF live_healthy THEN cook_healthy
+IF dusty_apartment THEN clean_up
+IF creative AND old_apartment THEN renovate
+IF weekend THEN visit_family
+IF vacation THEN do_roadtrip
+IF likes_coffee THEN get_coffee
+IF events_in_location THEN check_it_out
+IF creative AND story_teller THEN write_book
+IF want_to_be_educated THEN read_articles_online
+IF have_gaming_console THEN play_games
+IF want_get_to_shape THEN go_to_gym
+IF feel_allmighty THEN accomplish_your_dreams

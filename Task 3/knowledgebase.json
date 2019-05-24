@@ -1,0 +1,898 @@
+{
+  "questions": {
+    "winter": "Is it winter?",
+    "snowing": "Is is snowing outside?",
+    "raining": "Is it raining outside?",
+    "freezing": "Is the temperature below 0?",
+    "creative": "Do you consider yourself creative?",
+    "dog": "Do you have a dog?",
+    "cat": "Do you have a cat?",
+    "animals": "Do you like animals?",
+    "time": "Do you have a lot of free time?",
+    "words": "Are you good with words?",
+    "story": "Can you tell stories well?",
+    "things": "Do you like talking about all kind of stuff?",
+    "sport": "Are you a sport type?",
+    "adrenaline": "Do you like adrenaline?",
+    "money": "Do you have financial resources?",
+    "shape": "Do you need to get in shape?",
+    "group": "Do you feel confident in a group?",
+    "challenges": "Do you like being challenged?",
+    "patient": "Are you patient?",
+    "coffee": "Do you like coffee?",
+    "relax": "Do you need to relax?",
+    "can_cook": "Can you cook?",
+    "hungry": "Are you hungry?",
+    "cards": "Do you have a pack of cards?",
+    "friends": "Do you have friends close by?",
+    "recipe": "You got some new recipes you wanna try out?",
+    "music": "Do you like music?",
+    "voice": "Do you have a good voice?",
+    "car": "Do you have car?",
+    "alcohol": "Do you like beer or cocktails?"
+  },
+  "messages": {
+    "snowman": "Build a snowman.",
+    "walk_dog": "Walk the dog.",
+    "play_cat": "Play with the cat.",
+    "visit_zoo": "Go to the zoo.",
+    "write_book": "Write some awesome story.",
+    "write_blog": "Start your own blog.",
+    "parachuting": "How about jump from plane? With a parachute of course.",
+    "water_ski": "Water skiing might be for you.",
+    "bike": "Go cycling. What an idea.",
+    "volleyball": "What do you think about volleyball? You should smash some.",
+    "puzzle": "Puzzle? Might turn your brain on.",
+    "code": "Some coding challenges might be interesting.",
+    "origami": "Origami. It's classy yet challenging.",
+    "card_tricks": "You should learn some card tricks to impress people.",
+    "play_cards": "How about some poker?",
+    "cafe": "Go to cafe, take coffee and chill out.",
+    "dinner_w_friends": "Cook a dinner and invite friends.",
+    "new_recipe": "Try that new recipe you got.",
+    "cook_healthy": "Cook something healthy.",
+    "order_food": "Order something to eat.",
+    "sing": "Sing! Shower doesn't count.",
+    "guitar": "Learn how to play the guitar.",
+    "piano": "Learn how to play the piano.",
+    "road_trip": "Plan a roadtrip with friends.",
+    "bar": "Visit bar."
+  },
+  "rules": [
+    {
+      "condition": [
+        {
+          "winter": true
+        },
+        {
+          "snowing": false
+        }
+      ],
+      "conclusion": [
+        {
+          "nice_weather": true
+        }
+      ],
+      "uncertainty": 0
+    },
+    {
+      "condition": [
+        {
+          "winter": false
+        },
+        {
+          "raining": true
+        }
+      ],
+      "conclusion": [
+        {
+          "nice_weather": false
+        }
+      ],
+      "uncertainty": 0
+    },
+    {
+      "condition": [
+        {
+          "winter": false
+        },
+        {
+          "raining": true
+        }
+      ],
+      "conclusion": [
+        {
+          "nice_weather": false
+        }
+      ],
+      "uncertainty": 0
+    },
+    {
+      "condition": [
+        {
+          "winter": false
+        },
+        {
+          "raining": false
+        }
+      ],
+      "conclusion": [
+        {
+          "nice_weather": true
+        }
+      ],
+      "uncertainty": 0
+    },
+    {
+      "condition": [
+        {
+          "snowing": false
+        },
+        {
+          "winter": true
+        },
+        {
+          "freezing": true
+        }
+      ],
+      "conclusion": [
+        {
+          "snow": true
+        }
+      ],
+      "uncertainty": 0
+    },
+    {
+      "condition": [
+        {
+          "winter": true
+        },
+        {
+          "snow": true
+        },
+        {
+          "creative": true
+        }
+      ],
+      "conclusion": [
+        {
+          "snowman": true
+        }
+      ],
+      "uncertainty": 0
+    },
+    {
+      "condition": [
+        {
+          "nice_weather": true
+        },
+        {
+          "animals": true
+        },
+        {
+          "dog": true
+        },
+        {
+          "cat": false
+        }
+      ],
+      "conclusion": [
+        {
+          "walk_dog": true
+        }
+      ],
+      "uncertainty": 0
+    },
+    {
+      "condition": [
+        {
+          "cat": true
+        },
+        {
+          "time": true
+        },
+        {
+          "animals": true
+        },
+        {
+          "dog": false
+        }
+      ],
+      "conclusion": [
+        {
+          "play_cat": true
+        }
+      ],
+      "uncertainty": 0
+    },
+    {
+      "condition": [
+        {
+          "cat": false
+        },
+        {
+          "dog": false
+        }
+      ],
+      "conclusion": [
+        {
+          "pet": false
+        }
+      ],
+      "uncertainty": 0
+    },
+    {
+      "condition": [
+        {
+          "animals": true
+        },
+        {
+          "pet": false
+        },
+        {
+          "nice_weather": true
+        }
+      ],
+      "conclusion": [
+        {
+          "visit_zoo": true
+        }
+      ],
+      "uncertainty": 0
+    },
+    {
+      "condition": [
+        {
+          "time": true
+        },
+        {
+          "words": true
+        },
+        {
+          "creative": true
+        }
+      ],
+      "conclusion": [
+        {
+          "writer": true
+        }
+      ],
+      "uncertainty": 0
+    },
+    {
+      "condition": [
+        {
+          "time": false
+        }
+      ],
+      "conclusion": [
+        {
+          "writer": false
+        }
+      ],
+      "uncertainty": 0
+    },
+    {
+      "condition": [
+        {
+          "words": false
+        }
+      ],
+      "conclusion": [
+        {
+          "writer": false
+        }
+      ],
+      "uncertainty": 0
+    },
+    {
+      "condition": [
+        {
+          "creative": false
+        }
+      ],
+      "conclusion": [
+        {
+          "writer": false
+        }
+      ],
+      "uncertainty": 0
+    },
+    {
+      "condition": [
+        {
+          "writer": true
+        },
+        {
+          "story": true
+        }
+      ],
+      "conclusion": [
+        {
+          "write_book": true
+        }
+      ],
+      "uncertainty": 0
+    },
+    {
+      "condition": [
+        {
+          "writer": true
+        },
+        {
+          "things": true
+        }
+      ],
+      "conclusion": [
+        {
+          "write_blog": true
+        }
+      ],
+      "uncertainty": 0
+    },
+    {
+      "condition": [
+        {
+          "sport": true
+        },
+        {
+          "adrenaline": true
+        },
+        {
+          "money": true
+        },
+        {
+          "time": true
+        }
+      ],
+      "conclusion": [
+        {
+          "extreme_sport": true
+        }
+      ],
+      "uncertainty": 0
+    },
+    {
+      "condition": [
+        {
+          "sport": true
+        },
+        {
+          "shape": true
+        },
+        {
+          "time": true
+        }
+      ],
+      "conclusion": [
+        {
+          "normal_sport": true
+        }
+      ],
+      "uncertainty": 0
+    },
+    {
+      "condition": [
+        {
+          "extreme_sport": true
+        },
+        {
+          "group": true
+        }
+      ],
+      "conclusion": [
+        {
+          "parachuting": true
+        }
+      ],
+      "uncertainty": 0
+    },
+    {
+      "condition": [
+        {
+          "extreme_sport": true
+        },
+        {
+          "group": false
+        }
+      ],
+      "conclusion": [
+        {
+          "water_ski": true
+        }
+      ],
+      "uncertainty": 0
+    },
+    {
+      "condition": [
+        {
+          "normal_sport": true
+        },
+        {
+          "group": false
+        }
+      ],
+      "conclusion": [
+        {
+          "bike": true
+        }
+      ],
+      "uncertainty": 0
+    },
+    {
+      "condition": [
+        {
+          "normal_sport": true
+        },
+        {
+          "group": true
+        }
+      ],
+      "conclusion": [
+        {
+          "volleyball": true
+        }
+      ],
+      "uncertainty": 0
+    },
+    {
+      "condition": [
+        {
+          "challenges": true
+        },
+        {
+          "time": true
+        }
+      ],
+      "conclusion": [
+        {
+          "puzzle": true
+        }
+      ],
+      "uncertainty": 0
+    },
+    {
+      "condition": [
+        {
+          "puzzle": true
+        },
+        {
+          "patient": true
+        }
+      ],
+      "conclusion": [
+        {
+          "code": true
+        }
+      ],
+      "uncertainty": 0
+    },
+    {
+      "condition": [
+        {
+          "puzzle": true
+        },
+        {
+          "creative": true
+        }
+      ],
+      "conclusion": [
+        {
+          "origami": true
+        }
+      ],
+      "uncertainty": 0
+    },
+    {
+      "condition": [
+        {
+          "time": true
+        },
+        {
+          "cards": true
+        }
+      ],
+      "conclusion": [
+        {
+          "card_tricks": true
+        }
+      ],
+      "uncertainty": 0
+    },
+    {
+      "condition": [
+        {
+          "cards": true
+        },
+        {
+          "friends": true
+        }
+      ],
+      "conclusion": [
+        {
+          "play_cards": true
+        }
+      ],
+      "uncertainty": 0
+    },
+    {
+      "condition": [
+        {
+          "coffee": true
+        },
+        {
+          "relax": true
+        }
+      ],
+      "conclusion": [
+        {
+          "cafe": true
+        }
+      ],
+      "uncertainty": 0
+    },
+    {
+      "condition": [
+        {
+          "can_cook": true
+        },
+        {
+          "time": true
+        },
+        {
+          "creative": true
+        },
+        {
+          "hungry": true
+        }
+      ],
+      "conclusion": [
+        {
+          "cook": true
+        }
+      ],
+      "uncertainty": 0
+    },
+    {
+      "condition": [
+        {
+          "cook": true
+        },
+        {
+          "friends": true
+        },
+        {
+          "time": true
+        }
+      ],
+      "conclusion": [
+        {
+          "dinner_w_friends": true
+        }
+      ],
+      "uncertainty": 0
+    },
+    {
+      "condition": [
+        {
+          "cook": true
+        },
+        {
+          "recipe": true
+        },
+        {
+          "time": true
+        }
+      ],
+      "conclusion": [
+        {
+          "new_recipe": true
+        }
+      ],
+      "uncertainty": 0
+    },
+    {
+      "condition": [
+        {
+          "cook": true
+        },
+        {
+          "shape": true
+        }
+      ],
+      "conclusion": [
+        {
+          "cook_healthy": true
+        }
+      ],
+      "uncertainty": 0
+    },
+    {
+      "condition": [
+        {
+          "hungry": true
+        },
+        {
+          "can_cook": false
+        },
+        {
+          "money": true
+        }
+      ],
+      "conclusion": [
+        {
+          "order_food": true
+        }
+      ],
+      "uncertainty": 0
+    },
+    {
+      "condition": [
+        {
+          "music": true
+        },
+        {
+          "voice": true
+        },
+        {
+          "words": true
+        }
+      ],
+      "conclusion": [
+        {
+          "sing": true
+        }
+      ],
+      "uncertainty": 0
+    },
+    {
+      "condition": [
+        {
+          "music": true
+        },
+        {
+          "time": true
+        },
+        {
+          "money": true
+        }
+      ],
+      "conclusion": [
+        {
+          "learn_instrument": true
+        }
+      ],
+      "uncertainty": 0
+    },
+    {
+      "condition": [
+        {
+          "learn_instrument": true
+        },
+        {
+          "patient": true
+        }
+      ],
+      "conclusion": [
+        {
+          "guitar": true
+        }
+      ],
+      "uncertainty": 0
+    },
+    {
+      "condition": [
+        {
+          "learn_instrument": true
+        },
+        {
+          "patient": true
+        }
+      ],
+      "conclusion": [
+        {
+          "piano": true
+        }
+      ],
+      "uncertainty": 0
+    },
+    {
+      "condition": [
+        {
+          "friends": true
+        },
+        {
+          "time": true
+        },
+        {
+          "car": true
+        }
+      ],
+      "conclusion": [
+        {
+          "road_trip": true
+        }
+      ],
+      "uncertainty": 0
+    },
+    {
+      "condition": [
+        {
+          "friends": true
+        },
+        {
+          "time": true
+        },
+        {
+          "alcohol": true
+        }
+      ],
+      "conclusion": [
+        {
+          "bar": true
+        }
+      ],
+      "uncertainty": 0
+    }
+  ],
+  "deducted": [
+    "nice_weather",
+    "snow",
+    "pet",
+    "writer",
+    "extreme_sport",
+    "normal_sport",
+    "cook",
+    "learn_instrument"
+  ],
+  "relations": {
+    "snowman": {
+      "winter": 0.9,
+      "snow": 0.9,
+      "creative": 0.6
+    },
+    "walk_dog": {
+      "nice_weather": 0.6,
+      "animals": 0.5,
+      "cat": 0.9,
+      "dog": 0.8
+    },
+    "play_cat": {
+      "cat": 1,
+      "time": 0.8,
+      "animals": 0.8,
+      "dog": 0.5
+    },
+    "visit_zoo": {
+      "animals": 0.9,
+      "pet": 0.4,
+      "nice_weather": 0.7
+    },
+    "write_book": {
+      "writer": 0.8,
+      "story": 0.6
+    },
+    "write_blog": {
+      "writer": 0.8,
+      "things": 0.8
+    },
+    "parachuting": {
+      "extreme_sport": 0.8,
+      "group": 0.6
+    },
+    "water_ski": {
+      "extreme_sport": 0.8,
+      "group": 0.5
+    },
+    "bike": {
+      "normal_sport": 0.6,
+      "group": 0.4
+    },
+    "volleyball": {
+      "normal_sport": 0.8,
+      "group": 0.6
+    },
+    "puzzle": {
+      "challenges": 0.7,
+      "time": 0.4
+    },
+    "code": {
+      "puzzle": 0.6,
+      "patient": 0.8
+    },
+    "origami": {
+      "puzzle": 0.7,
+      "creative": 0.6
+    },
+    "card_tricks": {
+      "cards": 0.9,
+      "time": 0.5
+    },
+    "play_cards": {
+      "cards": 0.8,
+      "friends": 0.7
+    },
+    "cafe": {
+      "coffee": 0.8,
+      "relax": 0.4
+    },
+    "dinner_w_friends": {
+      "cook": 0.7,
+      "friends": 0.6,
+      "time": 0.7
+    },
+    "new_recipe": {
+      "cook": 0.7,
+      "recipe": 0.5,
+      "time": 0.6
+    },
+    "cook_healthy": {
+      "cook": 0.6,
+      "shape": 0.8
+    },
+    "order_food": {
+      "hungry": 0.7,
+      "can_cook": 0.9
+    },
+    "sing": {
+      "music": 0.8,
+      "voice": 0.9,
+      "words": 0.4
+    },
+    "guitar": {
+      "learn_instrument": 0.8,
+      " patient": 0.3
+    },
+    "piano": {
+      "learn_instrument": 0.85,
+      " patient": 0.33
+    },
+    "road_trip": {
+      "friends": 0.8,
+      "time": 0.6,
+      "car": 0.4
+    },
+    "bar": {
+      "friends": 0.5,
+      "time": 0.8,
+      "alcohol": 0.6
+    }
+  },
+  "accuracy": {
+    "snowman": 0.8,
+    "walk_dog": 0.9,
+    "play_cat": 1,
+    "visit_zoo": 0.75,
+    "write_book": 0.65,
+    "write_blog": 0.5,
+    "parachuting": 0.8,
+    "water_ski": 0.59,
+    "bike": 0.6,
+    "volleyball": 0.8,
+    "puzzle": 0.7,
+    "code": 0.38,
+    "origami": 0.68,
+    "card_tricks": 0.45,
+    "play_cards": 0.88,
+    "cafe": 0.9,
+    "dinner_w_friends": 0.76,
+    "new_recipe": 0.95,
+    "cook_healthy": 0.45,
+    "order_food": 0.35,
+    "sing": 0.6,
+    "guitar": 0.55,
+    "piano": 0.4,
+    "road_trip": 0.7,
+    "bar": 0.9
+  },
+  "additional":{
+    "nice_weather":0.9,
+    "snow":0.8,
+    "pet":1,
+    "writer":0.75,
+    "extreme_sport":0.55,
+    "normal_sport":0.7,
+    "cook":0.88,
+    "learn_instrument":0.9
+  }
+}
