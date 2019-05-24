@@ -7,11 +7,9 @@ Expert system for BI-ZNS course.
 2. [x] Create inference machine
 3. [x] Implement Bayes theorem
 4. [x] Create fuzzy inference machine
-5. [ ] TBA
-
 
 ## Visualisation of expert system
-![Visualisation](/Task 1/chart.png)
+![Visualisation](https://github.com/Eldeeqq/BI-ZNS/blob/master/Task%201/chart.png)
 
 description: This expert system will (based on user input) decide which activity should user do. It contains wide range of possibilities f.e. petting cat, walking the dog, cooking and more.
 
